@@ -447,7 +447,7 @@ function cancelOfflineGenerationRun(sessionId: string): boolean {
 
 // ── Rich media reprocessing on mount ──────────────────────────
 
-const TIME_GAP = 1 * 60 * 1000;
+const TIME_GAP = 30 * 60 * 1000;
 
 function shouldShowTimestamp(currentMsg: string, prevMsg: string | null): boolean {
     if (!prevMsg) return true; // First message always shows time
